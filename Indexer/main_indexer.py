@@ -2,8 +2,8 @@ import os
 import eventsWatcher
 from indexers import indexerV2, indexerV3
 
-datalake_path = "/Users/alejandroalemanaleman/Downloads/datalake_test"
-datamart_path = "/Users/alejandroalemanaleman/Downloads/datamart_test"
+datalake_path = "/datalake"
+datamart_path = "/datamart"
 
 if not os.path.exists(datalake_path):
     os.mkdir(datalake_path)
