@@ -1,0 +1,27 @@
+{
+  "the": {
+    "1": {
+      "frecuency": 1,
+      "lines": [
+        1
+      ]
+    }
+  },
+  "other": {
+    "1": {
+      "frecuency": 1,
+      "lines": [
+        1
+      ]
+    }
+  },
+  "I": {
+    "1": {
+      "frecuency": 2,
+      "lines": [
+        1,
+        2
+      ]
+    }
+  }
+}
