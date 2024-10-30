@@ -9,8 +9,6 @@ def execute(num_of_books, datalake_directory):
         i = random.randint(1, 99999)
         url = f"https://www.gutenberg.org/cache/epub/{i}/pg{i}.txt"
 
-        if counter >= num_of_books:
-            break
         response = requests.get(url)
 
         if response.status_code == 200:

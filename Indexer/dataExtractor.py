@@ -33,31 +33,6 @@ def getMetadata(book, book_path):
     return metadata_dict
 
 
-def getWords1(book):
-    word_dict = {}
-
-    for line_number, line in enumerate(book, start=1):
-        # Split the line into words
-        words = line.split()  # Split on whitespace to get words
-
-        for word in words:
-            clean_word = wordCleaner.clean_and_evaluate_word(word)  # Clean the word
-            if clean_word:
-                # Add line number to the dictionary
-                if clean_word in word_dict:
-                    word_dict[clean_word].append(line_number)
-                else:
-                    word_dict[clean_word] = [line_number]
-
-    # Sort and remove duplicates from line numbers
-    for key in word_dict:
-        word_dict[key] = sorted(set(word_dict[key]))
-
-    print(word_dict)
-    return word_dict
-
-
-import re
 
 
 def getWords(book):

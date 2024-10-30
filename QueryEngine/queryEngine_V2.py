@@ -19,7 +19,7 @@ def preview_lines(datalake_path, id_book, lines):
             for current_number, line_content in enumerate(file, start=1):
                 if current_number in lines[:3]:
                     print(f"Line {current_number}: {line_content.strip()}")
-                    if len(lines) == lines.index(current_number)+1:  # If all lines have been printed
+                    if 3 == lines.index(current_number)+1:  # If all lines have been printed
                         break
     except FileNotFoundError:
         print(f"File {id_book} not found.")
